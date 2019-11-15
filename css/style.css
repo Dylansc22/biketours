@@ -18,8 +18,6 @@ border: none;
 border-radius: 3px;
 font-size: 12px;
 text-align: center;
-color: #fff;
-background: #ee8a65;
 }
 
 .pause {
@@ -33,8 +31,19 @@ border: none;
 border-radius: 3px;
 font-size: 12px;
 text-align: center;
-color: #fff;
-background: #ee8a65;
+}
+
+.othermap {
+	display: block;
+position: relative;
+margin: 15px auto;
+width: 100px;
+height: 40px;
+padding: 10px;
+border: none;
+border-radius: 3px;
+font-size: 10px;
+text-align: center;
 }
 
 #trailbox {

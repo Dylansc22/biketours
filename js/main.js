@@ -7,8 +7,13 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZHlsYW5jIiwiYSI6Im53UGgtaVEifQ.RJiPqXwEtCLTLl
 var map = new mapboxgl.Map({
 container: 'map',
 style: 'mapbox://styles/dylanc/ck2zsfmcj09ob1cqldz2zr078',
-zoom: 0
+zoom: 0,
+attributionControl: false,
 });
+
+map.addControl(new mapboxgl.AttributionControl({
+    compact: true,   
+    }));
 
 map.on('load', function () {
 // We use D3 to fetch the JSON here so that we can parse and use it separately
@@ -59,7 +64,7 @@ map.addLayer({
           isPaused = false;
           map.jumpTo({ 'center': coordinates[0], 'zoom': 11 });
                     map.setPitch(30);
-                     i=0;
+                    i=0;
                     // on a regular basis, add more coordinates from the saved list and update the map
                     timer = window.setInterval(function() {
                     if (i < coordinates.length) {

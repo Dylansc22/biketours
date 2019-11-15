@@ -1,0 +1,73 @@
+body { margin:0; padding:0; }
+#map { position:absolute; top:0; bottom:0; width:100%; }
+
+
+#controls {
+	position: absolute;
+	left:20px;
+	bottom:50px;
+}
+.fly {
+display: block;
+position: relative;
+margin: 15px auto;
+width: 100px;
+height: 40px;
+padding: 10px;
+border: none;
+border-radius: 3px;
+font-size: 12px;
+text-align: center;
+}
+
+.pause {
+display: block;
+position: relative;
+margin: 15px auto;
+width: 100px;
+height: 40px;
+padding: 10px;
+border: none;
+border-radius: 3px;
+font-size: 12px;
+text-align: center;
+}
+
+.othermap {
+	display: block;
+position: relative;
+margin: 15px auto;
+width: 100px;
+height: 40px;
+padding: 10px;
+border: none;
+border-radius: 3px;
+font-size: 10px;
+text-align: center;
+}
+
+#trailbox {
+	position: absolute;
+	top:30px;
+	left: 30px;
+}
+
+#trailbox h1 {
+	font-size: 64px;
+	color:yellow;
+}
+
+#authorship {
+	position: absolute;
+	bottom:30px;
+	right:30px;
+}
+
+#authorship h4 {
+	font-size: 24px;
+	color:yellow;
+}
+
+#authorship p {
+	color:yellow;
+}
