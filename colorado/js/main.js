@@ -15,6 +15,34 @@ map.addControl(new mapboxgl.AttributionControl({
     compact: true,   
     }));
 
+toggleLayer ('satellite', ['mapbox-satellite'], 'Satallite Baselayer');
+
+function toggleLayer(htmlID, ids, name) {
+    var link = document.createElement('button');
+    link.setAttribute('id', htmlID);
+    link.href = '#';
+    link.className = '';
+    link.textContent = name;
+   
+
+    link.onclick = function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        for (layers in ids){
+            var visibility = map.getLayoutProperty(ids[layers], 'visibility');
+            if (visibility === 'visible') {
+                map.setLayoutProperty(ids[layers], 'visibility', 'none');
+                this.className = '';
+            } else {
+                this.className = 'active';
+                map.setLayoutProperty(ids[layers], 'visibility', 'visible');
+            }
+         }
+    };
+    var layers = document.getElementById('controls');
+    layers.appendChild(link);
+}
+
 map.on('load', function () {
 // We use D3 to fetch the JSON here so that we can parse and use it separately
 // from GL JS's use in the added source. You can use any request method (library
