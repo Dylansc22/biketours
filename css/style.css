@@ -48,8 +48,8 @@ text-align: center;
 
 #trailbox {
 	position: absolute;
-	top:30px;
-	left: 30px;
+	top:50px;
+	left: 50px;
 }
 
 #trailbox h1 {
@@ -59,8 +59,8 @@ text-align: center;
 
 #authorship {
 	position: absolute;
-	bottom:30px;
-	right:30px;
+	bottom:50px;
+	right:50px;
 }
 
 #authorship h4 {
