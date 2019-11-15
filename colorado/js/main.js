@@ -93,7 +93,7 @@ i++;
 } else {
 window.clearInterval(timer);
 }
-}, 100);
+}, 40);
 });
 });
 
